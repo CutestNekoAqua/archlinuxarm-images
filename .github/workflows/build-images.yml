@@ -28,8 +28,8 @@ jobs:
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        - name: Free Disk Space (Ubuntu)
-    - uses: jlumbroso/free-disk-space@main
+    - name: Free Disk Space (Ubuntu)
+      uses: jlumbroso/free-disk-space@main
       with:
         # this might remove tools that are actually needed,
         # if set to "true" but frees about 6 GB
